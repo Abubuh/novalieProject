@@ -29,17 +29,40 @@
         "movimiento": "Prorroga",
         "fiado": "BARCO S.A DE C.V",
         "antiguedad": 44,
-        "diasVencimiento": 44,
-        "importe": 95005
+        "diasVencimiento": 50,
+        "importe": 412345
     },
     {
-
-        "fianza": "3231-0000",
+        "fianza": "4231-0000",
         "movimiento": "Prorroga",
-        "fiado": "MATAMOROS SA CV",
+        "fiado": "TIJUANA SA CV",
         "antiguedad": 20,
-        "diasVencimiento": 0,
-        "importe": 10000000
+        "diasVencimiento": 7,
+        "importe": 13231
+    },
+    {
+        "fianza": "7566-0000",
+        "movimiento": "Prorroga",
+        "fiado": "SALTILLO SA CV",
+        "antiguedad": 20,
+        "diasVencimiento": 55,
+        "importe": 60000
+    },
+    {
+        "fianza": "3231-9877",
+        "movimiento": "Prorroga",
+        "fiado": "U.S SA CV",
+        "antiguedad": 20,
+        "diasVencimiento": 9,
+        "importe": 500000
+    },
+    {
+        "fianza": "7657-8768",
+        "movimiento": "Prorroga",
+        "fiado": "MONTERREY SA CV",
+        "antiguedad": 20,
+        "diasVencimiento": 82,
+        "importe": 4897411
     }
 ]
 }

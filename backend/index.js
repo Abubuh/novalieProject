@@ -1,3 +1,4 @@
+let crypto = require('crypto')
 let express = require('express');
 let cors = require('cors')
 let app = express();
@@ -7,7 +8,13 @@ const port = 3001
 app.use(cors())
 
 app.get('/pagos', (req, res) => {
-    res.send(data)
+    const formatedData = data.data.map((office) => {
+        return {
+            ...office,
+            id: crypto.randomUUID()
+        }
+    })
+    res.send({data: formatedData})
 })
 
 app.listen(port, () => {

@@ -1,0 +1,45 @@
+{"data": [{
+        "fianza": "1456-0000",
+        "movimiento": "Expedicion",
+        "fiado": "AGROGEN S.A DE C.V",
+        "antiguedad": 200,
+        "diasVencimiento": 92,
+        "importe": 200000
+    },
+    {
+        "fianza": "5456-0000",
+        "movimiento": "Ampliacion",
+        "fiado": "DOMANI S.A DE C.V",
+        "antiguedad": 98,
+        "diasVencimiento": 31,
+        "importe": 20000
+    },
+    {
+
+        "fianza": "4568-0000",
+        "movimiento": "Prorroga",
+        "fiado": "BARCO S.A DE C.V",
+        "antiguedad": 20,
+        "diasVencimiento": 0,
+        "importe": 80000
+    },
+    {
+
+        "fianza": "4561-0000",
+        "movimiento": "Prorroga",
+        "fiado": "BARCO S.A DE C.V",
+        "antiguedad": 44,
+        "diasVencimiento": 44,
+        "importe": 95005
+    },
+    {
+
+        "fianza": "3231-0000",
+        "movimiento": "Prorroga",
+        "fiado": "MATAMOROS SA CV",
+        "antiguedad": 20,
+        "diasVencimiento": 0,
+        "importe": 10000000
+    }
+]
+}

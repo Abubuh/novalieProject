@@ -47,10 +47,10 @@ function App() {
   }
 
   return (
-  <div className="bg-amber-50 min-h-screen px-7">
-    <h1 className="text-4xl text-center py-10">Prima por cobrar</h1>
-    <section className="mb-4 flex gap-4">
-        <select name="" id="" className="w-36 px-1" onChange={handleCurrentOffice}>
+  <div className="appBody">
+    <h1>Prima por cobrar</h1>
+    <section className="inputContainer">
+        <select name="" id="" onChange={handleCurrentOffice}>
           {
             officesArray.map((office) => {
               return (
@@ -62,10 +62,10 @@ function App() {
     </section>
     {
         offices.length <= 1 ? 
-        <p className="text-4xl text-center pt-10">No data found</p> :
+        <p className="noDataFound">No se encontro informacion</p> :
         <>
-          <section className="mb-10">
-            <div className="grid grid-cols-3 gap-16 text-center">
+          <section className="paymentSection">
+            <div className="paymentContainers">
               {
                 VALUES.map(({currency: currency, value}) => {
                   return (
@@ -75,28 +75,28 @@ function App() {
               }
             </div>
           </section>
-          <section className="pb-5">
-            <table className="w-full border border-spacing-0 border-separate  border-black text-center rounded-md">
+          <section className="tableSection">
+            <table >
               <thead>
-                <tr className="[&>th]:p-3 [&>th]:border-black ">
-                  <th className="border-r">Fianza</th>
-                  <th className="border-r">Movimiento</th>
-                  <th className="border-r">Fiado</th>
-                  <th className="border-r">Antiguedad</th>
-                  <th className="border-r">Dias de vencimiento</th>
+                <tr className="headerRow">
+                  <th>Fianza</th>
+                  <th>Movimiento</th>
+                  <th>Fiado</th>
+                  <th>Antiguedad</th>
+                  <th>Dias de vencimiento</th>
                   <th >Importe</th>
                 </tr>
               </thead>
-              <tbody className="[&>tr>td]:p-1">
+              <tbody className="dataRows">
                 {
                   filterOffices.map(({fianza, movimiento, fiado, antiguedad, diasVencimiento, importe, id }) => {
                     return (
-                      <tr key={id} className="border border-black [&>td]:border-t [&>td]:border-black last:border-b-0">
-                        <td className="border-r border-black">{fianza}</td>
-                        <td className="border-r border-black">{movimiento}</td>
-                        <td className="border-r border-black">{fiado}</td>
-                        <td className="border-r border-black">{antiguedad}</td>
-                        <td className={diasVencimiento > 33 ? "bg-red-400 border-r border-black" : "bg-green-400 border-r border-black"}>{diasVencimiento}</td>
+                      <tr key={id}>
+                        <td>{fianza}</td>
+                        <td>{movimiento}</td>
+                        <td>{fiado}</td>
+                        <td>{antiguedad}</td>
+                        <td className={diasVencimiento > 33 ? "overduePayment" : "paymentOnTime"}>{diasVencimiento}</td>
                         <td >{importe}</td>
                       </tr>
                     )

@@ -1,3 +1,149 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body{
+    background-color: rgb(249, 248, 235);
+    
+}
+
+.appBody{
+    background-color: rgb(249, 248, 235);
+    min-height: 100vh;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+h1{
+    font-size: 300%;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.inputContainer{
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 4rem;
+}
+
+select{
+    width: 9rem;
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+
+.noDataFound{
+    font-size: 250%;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.paymentSection{
+    margin-bottom: 2.5rem;
+}
+
+.paymentContainers{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4rem;
+    text-align: center;
+}
+
+.tableSection{
+    padding-bottom: 1.25rem;
+}
+
+table{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    border: 1px solid black;
+    border-spacing: 0;
+    border-collapse: separate;
+    text-align: center;
+    border-radius: 10px;
+}
+
+th{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+th:not(:last-child){
+    border-right: 1px solid black;
+}
+
+
+td{
+    padding-top: .38rem;
+    padding-bottom: .38rem;
+    border-top: 1px solid black;
+}
+
+td:not(:last-child){
+    border-right: 1px solid black;
+}
+
+.overduePayment{
+    background-color: rgba(226, 118, 118, 0.905);
+}
+
+.paymentOnTime{
+    background-color: rgba(128, 220, 128, 0.863);
+}
+
+.paymentComponent{
+    border: 2px solid black;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    border-radius: 5px;
+}
+
+.paymentCurrency{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 200%;
+}
+
+.totalPay{
+    text-align: center;
+    font-size: 250%;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.containerPerCurrency{
+    display: grid;
+    gap: 1.75rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    font-size: 150%;
+    margin-bottom: 1rem;
+}
+
+.paymentDisplay{
+    font-size: medium;
+}
+
+.percentageDisplay{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.arrowImage{
+    min-width: 15px;
+    width: 8.3%;
+    margin-right: .25rem;
+}
+
+.payOnTime{
+    color: rgb(15, 83, 191);
+}
+
+.payOverdue{
+    color: rgb(191, 19, 19);
+}
+
+.percentTotal{
+    font-size: 150%;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
